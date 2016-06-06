@@ -1,0 +1,43 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+ <div class="form-group col-md-5">
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone, :class => "form-control" %>
+  </div>
+  <div class="field" >
+    <span >
+    <%= f.label :active %>: 
+    <%= f.check_box :active, {checked: true} %>
+    </span>
+    <span style="float: right" >
+    <%= f.label :language %>:
+    <%= f.select :language, ["English", "Spanish"] %>
+    </span>
+    <br>
+    <span>
+    <%= f.label :PACE_score %>: 
+    <%= f.select :score, [1,2,3,4,5,6,7,8] %>
+    </span>
+    <span style="float: right" >
+    <%= f.label :next_message %> :
+    <%= f.collection_select :next_message, Message.select("id").order("id"), :id, :id, :class => "form-control" %>
+    </span>
+  </div>
+
+  <br><br>
+  <div class="actions" style="text-align: center" >
+    <%= f.submit :class => 'btn btn-primary'%>
+  </div>
+</div>
+<% end %>
