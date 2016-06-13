@@ -77,13 +77,13 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.after_initialize do 
+  config.after_initialize do
     Delayed::Job.scaler = :heroku_cedar
   end
-  
+
   config.action_mailer.perform_deliveries = true
 
-  config.action_mailer.default_url_options = { :host => 'cryptic-spire-8992.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'fierce-thicket-35827.herokuapp.com/' }
   config.action_mailer.delivery_method = :smtp
    ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
