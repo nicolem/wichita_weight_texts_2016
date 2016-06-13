@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate_admin!
-  skip_before_filter :authenticate_admin!, :only => "reply"
+  skip_before_action :authenticate_admin!, :only => :reply
+  skip_before_action :verify_authenticity_token, :only => :reply
 
   # GET /users
   # GET /users.json
