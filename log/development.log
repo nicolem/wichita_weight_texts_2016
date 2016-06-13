@@ -3634,3 +3634,1123 @@ Processing by UsersController#index as HTML
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."id" ASC[0m
   Rendered users/index.html.erb within layouts/application (7.1ms)
 Completed 200 OK in 241ms (Views: 239.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-06-13 09:19:39 -0500
+
+ActiveRecord::NoDatabaseError (FATAL:  database "wichita_weight_development" does not exist
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:665:in `rescue in connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.5ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.5ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (117.7ms)
+
+
+Started GET "/" for ::1 at 2016-06-13 09:20:14 -0500
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.3) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.3) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.2ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (112.2ms)
+  [1m[36m (4.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateAdmins (20150819201430)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (22.6ms)[0m  [1mCREATE TABLE "admins" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX  "index_admins_on_email" ON "admins"  ("email")
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX  "index_admins_on_reset_password_token" ON "admins"  ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150819201430"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20150819201513)
+  [1m[35m (6.1ms)[0m  BEGIN
+  [1m[36m (14.0ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "phone" character varying, "active" boolean, "next_message" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150819201513"]]
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMessages (20150819201857)
+  [1m[35m (5.7ms)[0m  BEGIN
+  [1m[36m (14.3ms)[0m  [1mCREATE TABLE "messages" ("id" serial primary key, "text" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150819201857"]]
+  [1m[36m (4.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateHistories (20150819201918)
+  [1m[35m (6.2ms)[0m  BEGIN
+  [1m[36m (16.0ms)[0m  [1mCREATE TABLE "histories" ("id" serial primary key, "user_id" integer, "message" character varying, "time" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150819201918"]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+Migrating to DeviseInvitableAddToAdmins (20150821150004)
+  [1m[35m (6.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "admins" ADD "invitation_token" character varying[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "admins" ADD "invitation_created_at" timestamp
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "admins" ADD "invitation_sent_at" timestamp[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "admins" ADD "invitation_accepted_at" timestamp
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "admins" ADD "invitation_limit" integer[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "admins" ADD "invited_by_id" integer
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "admins" ADD "invited_by_type" character varying[0m
+  [1m[35m (15.8ms)[0m  ALTER TABLE "admins" ADD "invitations_count" integer DEFAULT 0
+  [1m[36m (0.7ms)[0m  [1mCREATE  INDEX  "index_admins_on_invitations_count" ON "admins"  ("invitations_count")[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX  "index_admins_on_invitation_token" ON "admins"  ("invitation_token")
+  [1m[36m (0.8ms)[0m  [1mCREATE  INDEX  "index_admins_on_invited_by_id" ON "admins"  ("invited_by_id")[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "admins" ALTER "encrypted_password" DROP NOT NULL
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150821150004"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Migrating to CreateSpanishMessages (20150901183633)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (14.3ms)[0m  CREATE TABLE "spanish_messages" ("id" serial primary key, "text" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150901183633"]]
+  [1m[35m (5.7ms)[0m  COMMIT
+Migrating to AddLanguageToUsers (20150901183803)
+  [1m[36m (6.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "language" character varying
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150901183803"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+Migrating to CreateAMessages (20160604155234)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (14.8ms)[0m  CREATE TABLE "a_messages" ("id" serial primary key, "text" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160604155234"]]
+  [1m[35m (5.4ms)[0m  COMMIT
+Migrating to CreateBMessages (20160604155254)
+  [1m[36m (5.5ms)[0m  [1mBEGIN[0m
+  [1m[35m (14.0ms)[0m  CREATE TABLE "b_messages" ("id" serial primary key, "text" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160604155254"]]
+  [1m[35m (4.7ms)[0m  COMMIT
+Migrating to CreateCMessages (20160604155301)
+  [1m[36m (5.8ms)[0m  [1mBEGIN[0m
+  [1m[35m (15.2ms)[0m  CREATE TABLE "c_messages" ("id" serial primary key, "text" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160604155301"]]
+  [1m[35m (5.1ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'a_messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'admins'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'b_messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'c_messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'histories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'spanish_messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2016-06-13 09:20:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-06-13 09:20:30 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 1255ms (Views: 1236.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/b_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/a_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/bootstrap.min.self-6655d1384d1509415d234003e6f81cf5de3d688790aaadc1091aa5bb5795b1f1.css?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/spanish_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/c_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/scaffolds.self-bbb03550e137652162e4b1ba85488bae211ecd98f67a7fb7716ebbfeab384579.css?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/dataTables/bootstrap/3/jquery.dataTables.bootstrap.self-3093d2d4e5e31a3d86b31f78c596a71f2007ec59e45324ef0e9f5888dd1c1529.css?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/application.self-9e36f0c00e4fb9eba7ae948c5a7f18a353cbce444484365b17da8a1e04e2c304.css?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/dataTables/jquery.dataTables.self-770bf6f5f52c93784a25c3c866719f24d091a3f864c36850a7d338b58bbed52c.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/dataTables/bootstrap/3/jquery.dataTables.bootstrap.self-447fa22a7aa12f01eaf2d37b45bd9b5321653e6629d888973a478ba856099083.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/a_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/b_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/bootstrap.min.self-075878ec6a19d24f3b46052eb9e0e5bb5c2a098ac50d05d8e3a21309d129273a.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/c_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/spanish_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+
+
+Started GET "/assets/application.self-7e0339a5d0f7fe1d2ad7452cb924235cd3fb860666cf3881132946c74a5acf7c.js?body=1" for ::1 at 2016-06-13 09:20:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mAdmin Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = 'nicole.maneth@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["email", "nicole.maneth@gmail.com"], ["encrypted_password", "$2a$10$uQQ5eVgCAW/eiQ8H7T3e2uzVU11MxRLClubwCn5I/ypkvbX7gQIZu"], ["created_at", "2016-06-13 14:20:43.107139"], ["updated_at", "2016-06-13 14:20:43.107139"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "Healthy eating is the result of how and what a person eats and it is important for weight management and blood sugar control."], ["created_at", "2016-06-13 14:20:43.115141"], ["updated_at", "2016-06-13 14:20:43.115141"]]
+  [1m[35m (5.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "If you weigh fewer than 250 lbs., your calorie goal ranges from 1200 to 1500; your fat gram goal is 40 to 50."], ["created_at", "2016-06-13 14:20:43.122963"], ["updated_at", "2016-06-13 14:20:43.122963"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "If you weigh more than 250 lbs., your calorie goal ranges from 1500 to 1800; your fat gram goal is 50 to 60."], ["created_at", "2016-06-13 14:20:43.131626"], ["updated_at", "2016-06-13 14:20:43.131626"]]
+  [1m[35m (5.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "Your weight results from the balance between: Calories (energy) you take in by eating food.  Calories (energy) you use up by being active."], ["created_at", "2016-06-13 14:20:43.138909"], ["updated_at", "2016-06-13 14:20:43.138909"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "To lose weight, it's best to eat less and be more active. That way, you change both sides of the balance at once."], ["created_at", "2016-06-13 14:20:43.141378"], ["updated_at", "2016-06-13 14:20:43.141378"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "To lose 2 pounds per week, you must tip the balance by 7,000 calories per week (or 1,000 each day for 7 days)."], ["created_at", "2016-06-13 14:20:43.143703"], ["updated_at", "2016-06-13 14:20:43.143703"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "Yes, eating fewer calories from any type of food can cause weight loss."], ["created_at", "2016-06-13 14:20:43.145324"], ["updated_at", "2016-06-13 14:20:43.145324"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "Keep in mind, fat contains more than double the calories in the same amount of starches/sugars or protein."], ["created_at", "2016-06-13 14:20:43.146791"], ["updated_at", "2016-06-13 14:20:43.146791"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "All types of food contain calories.  The key is to pay attention to portion size. Review labels for serving sizes, calories and fat grams per serving."], ["created_at", "2016-06-13 14:20:43.148256"], ["updated_at", "2016-06-13 14:20:43.148256"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "It is important to use measuring utensils and a food scale."], ["created_at", "2016-06-13 14:20:43.149742"], ["updated_at", "2016-06-13 14:20:43.149742"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "The way you eat includes the following behaviors: how often you eat, how fast you eat, and your food traditions."], ["created_at", "2016-06-13 14:20:43.151516"], ["updated_at", "2016-06-13 14:20:43.151516"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "Healthy eating is important for reducing the risk of heart disease and managing blood pressure."], ["created_at", "2016-06-13 14:20:43.153108"], ["updated_at", "2016-06-13 14:20:43.153108"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "When attempting to lose weight, you may skip meals to save calories.  This often backfires; the resulting hunger can lead to binge eating."], ["created_at", "2016-06-13 14:20:43.154627"], ["updated_at", "2016-06-13 14:20:43.154627"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "Many experts recommend that no more than 30% of your total calories come from fat."], ["created_at", "2016-06-13 14:20:43.156556"], ["updated_at", "2016-06-13 14:20:43.156556"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "What kinds of foods are high in fat? Red meats, hot dogs, bacon, sausage, skin of chicken, regular cheese, whole milk, snacks, many baked goods."], ["created_at", "2016-06-13 14:20:43.157995"], ["updated_at", "2016-06-13 14:20:43.157995"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "A pattern of five smaller meals may be helpful for hunger control and blood sugar control."], ["created_at", "2016-06-13 14:20:43.159410"], ["updated_at", "2016-06-13 14:20:43.159410"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "Enjoyment. Eating food slowly provides more time to enjoy it, to savor each bite."], ["created_at", "2016-06-13 14:20:43.160752"], ["updated_at", "2016-06-13 14:20:43.160752"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "An eating “pause” can take the form of sitting back in the chair, talking with fellow diners, or cutting food into smaller pieces."], ["created_at", "2016-06-13 14:20:43.162119"], ["updated_at", "2016-06-13 14:20:43.162119"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "Putting utensil down.  Putting down the fork or spoon between bites will automatically slow the rate of eating."], ["created_at", "2016-06-13 14:20:43.163525"], ["updated_at", "2016-06-13 14:20:43.163525"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "Three food groups with the most suggested servings are the Bread, Cereal, Rice, and Pasta Group; the Vegetable Group; and the Fruit Group."], ["created_at", "2016-06-13 14:20:43.164897"], ["updated_at", "2016-06-13 14:20:43.164897"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "There are fewer servings of the food groups containing animal foods – the Milk, Yogurt, and Cheese Group and the Meat Group."], ["created_at", "2016-06-13 14:20:43.166284"], ["updated_at", "2016-06-13 14:20:43.166284"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "The smallest serving should be of Fats, Oils, and Sweets Group."], ["created_at", "2016-06-13 14:20:43.167728"], ["updated_at", "2016-06-13 14:20:43.167728"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "One serving of bread is one slice of bread or one-half of a bagel and a serving of meat, poultry, and fish refers to a 3 oz. portion."], ["created_at", "2016-06-13 14:20:43.169079"], ["updated_at", "2016-06-13 14:20:43.169079"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "Consider obtaining a low-calorie, low-fat cookbook.  They are good sources of healthy recipes."], ["created_at", "2016-06-13 14:20:43.170468"], ["updated_at", "2016-06-13 14:20:43.170468"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "Did you weigh today?  What is your current weight in pounds?"], ["created_at", "2016-06-13 14:20:43.171895"], ["updated_at", "2016-06-13 14:20:43.171895"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "Are you keeping track of your weight, calories, and fat grams?"], ["created_at", "2016-06-13 14:20:43.173276"], ["updated_at", "2016-06-13 14:20:43.173276"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "The diet industry is a $33 billion dollar business.  There are no “magic bullets” for weight loss."], ["created_at", "2016-06-13 14:20:43.174714"], ["updated_at", "2016-06-13 14:20:43.174714"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "A healthy, balanced diet and regular physical activity really provide the best chance for long-term, healthy body weight."], ["created_at", "2016-06-13 14:20:43.176147"], ["updated_at", "2016-06-13 14:20:43.176147"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "Ordering first and not lingering over the menu choices will help you make a better choice.  Menus are designed to make everything sound irresistible."], ["created_at", "2016-06-13 14:20:43.177576"], ["updated_at", "2016-06-13 14:20:43.177576"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "Drinking alcohol will add empty calories.  Recognize that if calories are “used up” on alcohol, a trade off of something else should occur."], ["created_at", "2016-06-13 14:20:43.179030"], ["updated_at", "2016-06-13 14:20:43.179030"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "Ask for what you want.  It’s the restaurant’s business to keep the customers happy, and most restaurants are accustomed to special requests."], ["created_at", "2016-06-13 14:20:43.180396"], ["updated_at", "2016-06-13 14:20:43.180396"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "Longing for a snack? Don’t go for the cookie jar. Eat an apple or a few baby carrots."], ["created_at", "2016-06-13 14:20:43.181915"], ["updated_at", "2016-06-13 14:20:43.181915"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "At a restaurant, ask for half portions, or split your dish with a friend."], ["created_at", "2016-06-13 14:20:43.183324"], ["updated_at", "2016-06-13 14:20:43.183324"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "Don’t forget to drink plenty of water – 64 ounces or more per day – it will keep you hydrated and help with your diet"], ["created_at", "2016-06-13 14:20:43.184687"], ["updated_at", "2016-06-13 14:20:43.184687"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Want to improve your memory? Walking is good for your brain. It improves mental health, improves memory, and enhances brain function."], ["created_at", "2016-06-13 14:20:43.190590"], ["updated_at", "2016-06-13 14:20:43.190590"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: REDUCE sugar! Just 15 minutes of walking after eating can improve blood sugar levels. Try to keep the walk close after having a meal."], ["created_at", "2016-06-13 14:20:43.199024"], ["updated_at", "2016-06-13 14:20:43.199024"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: STRESS LESS! Get away from a particularly stressful day and go for a walk in a natural setting. Walking helps cope with stress."], ["created_at", "2016-06-13 14:20:43.207567"], ["updated_at", "2016-06-13 14:20:43.207567"]]
+  [1m[35m (5.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: ENERGY, ENERGY, ENERGY! Walking improves vitality and helps you do much more for a longer time."], ["created_at", "2016-06-13 14:20:43.214862"], ["updated_at", "2016-06-13 14:20:43.214862"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: It’s in your blood! Walking reduces blood pressure & improves blood flow to your brain."], ["created_at", "2016-06-13 14:20:43.216965"], ["updated_at", "2016-06-13 14:20:43.216965"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Keep your bones HAPPY! Walking can reduce the loss of bone mass and the risk of osteoporosis."], ["created_at", "2016-06-13 14:20:43.219185"], ["updated_at", "2016-06-13 14:20:43.219185"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Mood swings? Head outside! Walking has emotional benefits! It can help to reduce depression, anger, and anxiety."], ["created_at", "2016-06-13 14:20:43.220718"], ["updated_at", "2016-06-13 14:20:43.220718"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Walk for a LONGER LIFE! Active people live up to 2 years longer!  Put on your walking shoes and head outside!"], ["created_at", "2016-06-13 14:20:43.222212"], ["updated_at", "2016-06-13 14:20:43.222212"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Walk for your WEIGHT! A brisk 30 min walk can burn up to 200 calories. Walking helps you lose body fat, especially around the middle."], ["created_at", "2016-06-13 14:20:43.223720"], ["updated_at", "2016-06-13 14:20:43.223720"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Catch your ZZZ’s! Walking surprisingly improves sleep and aids relaxation for a better rest."], ["created_at", "2016-06-13 14:20:43.225264"], ["updated_at", "2016-06-13 14:20:43.225264"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Get STRONGER! Walking tones your legs, buttocks, and abdominal muscles by building muscle tissue."], ["created_at", "2016-06-13 14:20:43.226740"], ["updated_at", "2016-06-13 14:20:43.226740"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: What are triglycerides?? A type of fat found in your blood. You need some, but too much is a health risk. Walking is a great way to lower them."], ["created_at", "2016-06-13 14:20:43.228231"], ["updated_at", "2016-06-13 14:20:43.228231"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: IMPROVE your balance! Walking outside on uneven grounds has the training effect to improve your balance. This reduces risks of falling."], ["created_at", "2016-06-13 14:20:43.229618"], ["updated_at", "2016-06-13 14:20:43.229618"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Tired of sitting all day? Walking helps you get your body moving and increases your energy level."], ["created_at", "2016-06-13 14:20:43.230973"], ["updated_at", "2016-06-13 14:20:43.230973"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: THINK BIG! Walking gives you a chance to think. Come up with ideas, discover solutions, meditate and relax."], ["created_at", "2016-06-13 14:20:43.232328"], ["updated_at", "2016-06-13 14:20:43.232328"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Feel your HEART! Active adults have lower rates of heart disease. Cut your risk of a heart attack in half just by walking more!"], ["created_at", "2016-06-13 14:20:43.233632"], ["updated_at", "2016-06-13 14:20:43.233632"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: GOOD or BAD? Walking lowers levels of LDL (“bad”) cholesterol while increasing levels of HDL (“good”) cholesterol."], ["created_at", "2016-06-13 14:20:43.234962"], ["updated_at", "2016-06-13 14:20:43.234962"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Did YOU KNOW? Walking 30 min daily helps prevent & control high blood pressure, which reduces risk of stroke0 and blood clotting."], ["created_at", "2016-06-13 14:20:43.236290"], ["updated_at", "2016-06-13 14:20:43.236290"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Think about it! Walking reduces the risk of breast and prostate cancer."], ["created_at", "2016-06-13 14:20:43.237642"], ["updated_at", "2016-06-13 14:20:43.237642"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: A LIFESAVER! By regulating blood sugar levels, walking regularly reduces the risk of developing type 2 diabetes."], ["created_at", "2016-06-13 14:20:43.238964"], ["updated_at", "2016-06-13 14:20:43.238964"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Want to improve your memory? Walking is good for your brain. It improves mental health, improves memory, and enhances brain function."], ["created_at", "2016-06-13 14:20:43.240312"], ["updated_at", "2016-06-13 14:20:43.240312"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: REDUCE sugar! Just 15 minutes of walking after eating can improve blood sugar levels. Try to keep the walk close after having a meal."], ["created_at", "2016-06-13 14:20:43.241740"], ["updated_at", "2016-06-13 14:20:43.241740"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: STRESS LESS! Get away from a particularly stressful day and go for a walk in a natural setting. Walking helps cope with stress."], ["created_at", "2016-06-13 14:20:43.243147"], ["updated_at", "2016-06-13 14:20:43.243147"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: ENERGY, ENERGY, ENERGY! Walking improves vitality and helps you do much more for a longer time."], ["created_at", "2016-06-13 14:20:43.244797"], ["updated_at", "2016-06-13 14:20:43.244797"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: It’s in your blood! Walking reduces blood pressure & improves blood flow to your brain."], ["created_at", "2016-06-13 14:20:43.246210"], ["updated_at", "2016-06-13 14:20:43.246210"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Keep your bones HAPPY! Walking can reduce the loss of bone mass and the risk of osteoporosis."], ["created_at", "2016-06-13 14:20:43.247568"], ["updated_at", "2016-06-13 14:20:43.247568"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Mood swings? Head outside! Walking has emotional benefits! It can help to reduce depression, anger, and anxiety."], ["created_at", "2016-06-13 14:20:43.248919"], ["updated_at", "2016-06-13 14:20:43.248919"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Walk for a LONGER LIFE! Active people live up to 2 years longer!  Put on your walking shoes and head outside!"], ["created_at", "2016-06-13 14:20:43.250233"], ["updated_at", "2016-06-13 14:20:43.250233"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Walk for your WEIGHT! A brisk 30 min walk can burn up to 200 calories. Walking helps you lose body fat, especially around the middle."], ["created_at", "2016-06-13 14:20:43.251661"], ["updated_at", "2016-06-13 14:20:43.251661"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "a_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Catch your ZZZ’s! Walking surprisingly improves sleep and aids relaxation for a better rest."], ["created_at", "2016-06-13 14:20:43.253391"], ["updated_at", "2016-06-13 14:20:43.253391"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: How to MAKE TIME? You don’t have to do it all at once! Take several short walks (10-15 min each) into. Build up time gradually over several weeks."], ["created_at", "2016-06-13 14:20:43.258933"], ["updated_at", "2016-06-13 14:20:43.258933"]]
+  [1m[35m (6.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Mark your calendar! Set up a goal: Walk for 30 - 60 minutes every 5 to 7 days a week. It becomes a healthy habit."], ["created_at", "2016-06-13 14:20:43.266899"], ["updated_at", "2016-06-13 14:20:43.266899"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: SHARING is caring! Consider walking with a family member or friend. They can too benefit from exercise."], ["created_at", "2016-06-13 14:20:43.275723"], ["updated_at", "2016-06-13 14:20:43.275723"]]
+  [1m[35m (5.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Make it FUN! Don’t just walk - move and groove! Keep things interesting by playing your favorite music while you walk."], ["created_at", "2016-06-13 14:20:43.283159"], ["updated_at", "2016-06-13 14:20:43.283159"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: No excuses! Tear down those mental walls. We’re talking about 30 min sessions each week That’s equivalent to 3 TV shows each week!"], ["created_at", "2016-06-13 14:20:43.285670"], ["updated_at", "2016-06-13 14:20:43.285670"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Need some fresh air? When the weather permits, consider going outside to a park or trail. If not, stop at a gym or a mall for your walking."], ["created_at", "2016-06-13 14:20:43.287850"], ["updated_at", "2016-06-13 14:20:43.287850"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Too tired to walk? Remember how good you feel AFTER the walk! -Walking gives me more energy.- This is true for most of us."], ["created_at", "2016-06-13 14:20:43.289803"], ["updated_at", "2016-06-13 14:20:43.289803"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Walk for LIFE! Make walking part of your daily life. Walk longer distances to your car, to work, or the store. Go for a walk during lunchtime."], ["created_at", "2016-06-13 14:20:43.291216"], ["updated_at", "2016-06-13 14:20:43.291216"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Walking is EASY! Find a safe place in your neighborhood, or join a walking group and try it."], ["created_at", "2016-06-13 14:20:43.292654"], ["updated_at", "2016-06-13 14:20:43.292654"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Feeling tired/stressed? A brisk 30 min walk can help. Physical activity stimulates brain chemicals that may leave you feeling happier/relaxed."], ["created_at", "2016-06-13 14:20:43.294169"], ["updated_at", "2016-06-13 14:20:43.294169"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: You’re walking more and feeling better. Want better results? Walk a little faster and longer for even GREATER health benefits."], ["created_at", "2016-06-13 14:20:43.295663"], ["updated_at", "2016-06-13 14:20:43.295663"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Struggling to fall/stay asleep? Walking helps you fall asleep faster & even deepen your sleep.  So keep moving to get good zzz s!"], ["created_at", "2016-06-13 14:20:43.297221"], ["updated_at", "2016-06-13 14:20:43.297221"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: TV. Gadgets with screens. Movies, computers, video games... What keeps you in your chair? Want to protect your health? GET UP and SIT LESS!"], ["created_at", "2016-06-13 14:20:43.298899"], ["updated_at", "2016-06-13 14:20:43.298899"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Sore after walking? When starting, slight muscle soreness is common – and temporary. Avoid muscle soreness by building up your walking slowly."], ["created_at", "2016-06-13 14:20:43.300357"], ["updated_at", "2016-06-13 14:20:43.300357"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Regular walking can lower cholesterol, blood pressure, AND control blood sugar. Make a plan and make it happen!"], ["created_at", "2016-06-13 14:20:43.301799"], ["updated_at", "2016-06-13 14:20:43.301799"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Too much TV time=not enough active time (2 hrs/day is the MAX). Don’t be a couch potato – find the OFF switch & get your body moving!"], ["created_at", "2016-06-13 14:20:43.303256"], ["updated_at", "2016-06-13 14:20:43.303256"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: WALK & TALK! Walking in the neighborhood or on a trail is a great way to catch up with friends as you walk!"], ["created_at", "2016-06-13 14:20:43.304664"], ["updated_at", "2016-06-13 14:20:43.304664"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Having trouble enjoying walking? Listen to music or books while walking to keep your mind occupied."], ["created_at", "2016-06-13 14:20:43.306273"], ["updated_at", "2016-06-13 14:20:43.306273"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Not feeling motivated? Convince a friend, family member, or take your pet for a nice stroll."], ["created_at", "2016-06-13 14:20:43.307931"], ["updated_at", "2016-06-13 14:20:43.307931"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health:  Tired of the same old path? Keep your walks interesting by choosing one new route or trail each month."], ["created_at", "2016-06-13 14:20:43.309334"], ["updated_at", "2016-06-13 14:20:43.309334"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: How to MAKE TIME? You don’t have to do it all at once! Take several short walks (10-15 min each) into. Build up time gradually over several weeks."], ["created_at", "2016-06-13 14:20:43.310658"], ["updated_at", "2016-06-13 14:20:43.310658"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Mark your calendar! Set up a goal: Walk for 30 - 60 minutes every 5 to 7 days a week. It becomes a healthy habit."], ["created_at", "2016-06-13 14:20:43.312065"], ["updated_at", "2016-06-13 14:20:43.312065"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: SHARING is caring! Consider walking with a family member or friend. They can too benefit from exercise."], ["created_at", "2016-06-13 14:20:43.313494"], ["updated_at", "2016-06-13 14:20:43.313494"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Make it FUN! Don’t just walk - move and groove! Keep things interesting by playing your favorite music while you walk."], ["created_at", "2016-06-13 14:20:43.314857"], ["updated_at", "2016-06-13 14:20:43.314857"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: No excuses! Tear down those mental walls. We’re talking about 30 min sessions each week That’s equivalent to 3 TV shows each week!"], ["created_at", "2016-06-13 14:20:43.316249"], ["updated_at", "2016-06-13 14:20:43.316249"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Need some fresh air? When the weather permits, consider going outside to a park or trail. If not, stop at a gym or a mall for your walking."], ["created_at", "2016-06-13 14:20:43.317580"], ["updated_at", "2016-06-13 14:20:43.317580"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Too tired to walk? Remember how good you feel AFTER the walk! -Walking gives me more energy.- This is true for most of us."], ["created_at", "2016-06-13 14:20:43.319165"], ["updated_at", "2016-06-13 14:20:43.319165"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Walk for LIFE! Make walking part of your daily life. Walk longer distances to your car, to work, or the store. Go for a walk during lunchtime."], ["created_at", "2016-06-13 14:20:43.320698"], ["updated_at", "2016-06-13 14:20:43.320698"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Walking is EASY! Find a safe place in your neighborhood, or join a walking group and try it."], ["created_at", "2016-06-13 14:20:43.322193"], ["updated_at", "2016-06-13 14:20:43.322193"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "b_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Feeling tired/stressed? A brisk 30 min walk can help. Physical activity stimulates brain chemicals that may leave you feeling happier/relaxed."], ["created_at", "2016-06-13 14:20:43.323630"], ["updated_at", "2016-06-13 14:20:43.323630"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: CONGRATULATIONS! You are doing regular physical activity to improve your health."], ["created_at", "2016-06-13 14:20:43.328959"], ["updated_at", "2016-06-13 14:20:43.328959"]]
+  [1m[35m (5.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Feel PROUD! You are doing something positive for yourself. Sometimes we lose sight of the physical and mental health benefits from exercise."], ["created_at", "2016-06-13 14:20:43.336983"], ["updated_at", "2016-06-13 14:20:43.336983"]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: When do you walk? Morning/afternoon/evening – it’s up to you. The best time to walk is whatever time you get out the door and start walking!"], ["created_at", "2016-06-13 14:20:43.345828"], ["updated_at", "2016-06-13 14:20:43.345828"]]
+  [1m[35m (5.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health:  Move place to place! Instead of competing for the closest parking space or paying for a nearby lot, park farther away and walk to your destination."], ["created_at", "2016-06-13 14:20:43.353176"], ["updated_at", "2016-06-13 14:20:43.353176"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Having trouble finding time? A little planning can help. Plan tomorrow’s walk TODAY and schedule your walk like an appointment."], ["created_at", "2016-06-13 14:20:43.355655"], ["updated_at", "2016-06-13 14:20:43.355655"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Time with friends! Walking and talking with someone can be fun, which can motivate you to walk further (and more often)! "], ["created_at", "2016-06-13 14:20:43.357986"], ["updated_at", "2016-06-13 14:20:43.357986"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Injured? Give yourself some time to heal before getting back to your physical activities."], ["created_at", "2016-06-13 14:20:43.359665"], ["updated_at", "2016-06-13 14:20:43.359665"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Reflect on your walking plan. What parts of walking do you enjoy most? What changes can you make to enjoy walking more?"], ["created_at", "2016-06-13 14:20:43.361188"], ["updated_at", "2016-06-13 14:20:43.361188"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Design your plan! Think of ways to vary your walking program, write them down, create a calendar, and make it convenient and safe for you."], ["created_at", "2016-06-13 14:20:43.362598"], ["updated_at", "2016-06-13 14:20:43.362598"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Were you active in the past but then stopped? If yes, what caused you to stop? What can you do differently this time to help you stay active?"], ["created_at", "2016-06-13 14:20:43.364073"], ["updated_at", "2016-06-13 14:20:43.364073"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Some like walking because of time they spend with friends. Others like the chance to listen to favorite music. What inspires you to stay active?"], ["created_at", "2016-06-13 14:20:43.365484"], ["updated_at", "2016-06-13 14:20:43.365484"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Most of us have situations (roadblocks) that keep us from being active. What is your roadblock? How can you get around it next time?"], ["created_at", "2016-06-13 14:20:43.366931"], ["updated_at", "2016-06-13 14:20:43.366931"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Have a backup plan! If you can’t commit to 30 minutes in a day all at once, split your walks into 10-15 min each throughout the day."], ["created_at", "2016-06-13 14:20:43.368655"], ["updated_at", "2016-06-13 14:20:43.368655"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Define your strategy! What helps you get back in track and moving? Do you listen to music, walk with a friend, or enjoy seeing natural scenery?"], ["created_at", "2016-06-13 14:20:43.370422"], ["updated_at", "2016-06-13 14:20:43.370422"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: REMINDER Its OK to have a pause in your walking once in a while. Don’t be hard on yourself. Feeling guilty does not help you get back on track."], ["created_at", "2016-06-13 14:20:43.371913"], ["updated_at", "2016-06-13 14:20:43.371913"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Extra Help! You may need some encouragement. Share your walking plan with family and friends, they are a great support system."], ["created_at", "2016-06-13 14:20:43.373352"], ["updated_at", "2016-06-13 14:20:43.373352"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Make it fun! Make some time to catch up with an old friend while walking."], ["created_at", "2016-06-13 14:20:43.374829"], ["updated_at", "2016-06-13 14:20:43.374829"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Reward yourself! Give yourself small rewards each time you go out and walk. Make a chart for your fridge to track progress. A visual is helpful!"], ["created_at", "2016-06-13 14:20:43.376267"], ["updated_at", "2016-06-13 14:20:43.376267"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: You are working hard! Praising yourself is an effective reward. -I did it and I am proud of myself.-"], ["created_at", "2016-06-13 14:20:43.377648"], ["updated_at", "2016-06-13 14:20:43.377648"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Get out of the routine!  Try new walking routes/ patterns or plan a hiking trip."], ["created_at", "2016-06-13 14:20:43.378943"], ["updated_at", "2016-06-13 14:20:43.378943"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: You are health conscious! Walking is an approach to start an exercise program and it’s an excellent way to protect your overall health."], ["created_at", "2016-06-13 14:20:43.380327"], ["updated_at", "2016-06-13 14:20:43.380327"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: CONGRATULATIONS! You are doing regular physical activity to improve your health."], ["created_at", "2016-06-13 14:20:43.381628"], ["updated_at", "2016-06-13 14:20:43.381628"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Feel PROUD! You are doing something positive for yourself. Sometimes we lose sight of the physical and mental health benefits from exercise."], ["created_at", "2016-06-13 14:20:43.382937"], ["updated_at", "2016-06-13 14:20:43.382937"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: When do you walk? Morning/afternoon/evening – it’s up to you. The best time to walk is whatever time you get out the door and start walking!"], ["created_at", "2016-06-13 14:20:43.384295"], ["updated_at", "2016-06-13 14:20:43.384295"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health:  Move place to place! Instead of competing for the closest parking space or paying for a nearby lot, park farther away and walk to your destination."], ["created_at", "2016-06-13 14:20:43.385784"], ["updated_at", "2016-06-13 14:20:43.385784"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Having trouble finding time? A little planning can help. Plan tomorrow’s walk TODAY and schedule your walk like an appointment."], ["created_at", "2016-06-13 14:20:43.387199"], ["updated_at", "2016-06-13 14:20:43.387199"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Time with friends! Walking and talking with someone can be fun, which can motivate you to walk further (and more often)! "], ["created_at", "2016-06-13 14:20:43.388632"], ["updated_at", "2016-06-13 14:20:43.388632"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Injured? Give yourself some time to heal before getting back to your physical activities."], ["created_at", "2016-06-13 14:20:43.390070"], ["updated_at", "2016-06-13 14:20:43.390070"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "AMsg4Health: Reflect on your walking plan. What parts of walking do you enjoy most? What changes can you make to enjoy walking more?"], ["created_at", "2016-06-13 14:20:43.391563"], ["updated_at", "2016-06-13 14:20:43.391563"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "c_messages" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["text", "AMsg4Health: Design your plan! Think of ways to vary your walking program, write them down, create a calendar, and make it convenient and safe for you."], ["created_at", "2016-06-13 14:20:43.392928"], ["updated_at", "2016-06-13 14:20:43.392928"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+
+
+Started POST "/admins/sign_in" for ::1 at 2016-06-13 09:20:49 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sz2+dl3rvc4lbt8SVao0WzTFQsrhtpu5GhCwFJnTkSp1VyLyxVCD2P+1EjdDBVqPpTommZQhtBQA/ZYDtrlVaA==", "admin"=>{"email"=>"nicole.maneth@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mAdmin Load (0.5ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."email" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["email", "nicole.maneth@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "admins" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "admins"."id" = $7  [["last_sign_in_at", "2016-06-13 14:20:49.954733"], ["current_sign_in_at", "2016-06-13 14:20:49.954733"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["updated_at", "2016-06-13 14:20:49.956186"], ["id", 1]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 111ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2016-06-13 09:20:49 -0500
+Processing by UsersController#index as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."id" ASC[0m
+  Rendered users/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 255ms (Views: 246.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/new" for ::1 at 2016-06-13 09:20:51 -0500
+Processing by UsersController#new as HTML
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered users/_form.html.erb (9.3ms)
+  Rendered users/new.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `score' for #<User:0x007f818ace4e98>):
+    27:     <br>
+    28:     <span>
+    29:     <%= f.label :PACE_score %>: 
+    30:     <%= f.select :score, [1,2,3,4,5,6,7,8] %>
+    31:     </span>
+    32:     <span style="float: right" >
+    33:     <%= f.label :next_message %> :
+  app/views/users/_form.html.erb:30:in `block in _app_views_users__form_html_erb__2987557497430734455_70097172717620'
+  app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__2987557497430734455_70097172717620'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1054938191739467466_70097173166980'
+
+
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.5ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (55.2ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (117.3ms)
+
+
+Started GET "/users/new" for ::1 at 2016-06-13 09:20:52 -0500
+Processing by UsersController#new as HTML
+  [1m[36mAdmin Load (0.4ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered users/_form.html.erb (4.3ms)
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `score' for #<User:0x007f818a5df5f8>):
+    27:     <br>
+    28:     <span>
+    29:     <%= f.label :PACE_score %>: 
+    30:     <%= f.select :score, [1,2,3,4,5,6,7,8] %>
+    31:     </span>
+    32:     <span style="float: right" >
+    33:     <%= f.label :next_message %> :
+  app/views/users/_form.html.erb:30:in `block in _app_views_users__form_html_erb__2987557497430734455_70097174377800'
+  app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__2987557497430734455_70097174377800'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1054938191739467466_70097174457900'
+
+
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.6ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (45.8ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (106.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddScoreToUsers (20160613142311)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "score" integer[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160613142311"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'a_messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'admins'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'b_messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'c_messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'histories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'spanish_messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/users/new" for ::1 at 2016-06-13 09:24:38 -0500
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by UsersController#new as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mMessage Load (0.5ms)[0m  SELECT "messages"."id" FROM "messages"  ORDER BY id
+  Rendered users/_form.html.erb (10.0ms)
+  Rendered users/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 221ms (Views: 197.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/b_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-13 09:24:38 -0500
+
+
+Started GET "/assets/a_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-13 09:24:38 -0500
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2016-06-13 09:24:38 -0500
+
+
+Started GET "/assets/bootstrap.min.self-6655d1384d1509415d234003e6f81cf5de3d688790aaadc1091aa5bb5795b1f1.css?body=1" for ::1 at 2016-06-13 09:24:38 -0500
+
+
+Started GET "/assets/spanish_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-13 09:24:38 -0500
+
+
+Started GET "/assets/c_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-13 09:24:38 -0500
+
+
+Started GET "/assets/scaffolds.self-bbb03550e137652162e4b1ba85488bae211ecd98f67a7fb7716ebbfeab384579.css?body=1" for ::1 at 2016-06-13 09:24:38 -0500
+
+
+Started GET "/assets/dataTables/bootstrap/3/jquery.dataTables.bootstrap.self-3093d2d4e5e31a3d86b31f78c596a71f2007ec59e45324ef0e9f5888dd1c1529.css?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/application.self-9e36f0c00e4fb9eba7ae948c5a7f18a353cbce444484365b17da8a1e04e2c304.css?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/dataTables/jquery.dataTables.self-770bf6f5f52c93784a25c3c866719f24d091a3f864c36850a7d338b58bbed52c.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/dataTables/bootstrap/3/jquery.dataTables.bootstrap.self-447fa22a7aa12f01eaf2d37b45bd9b5321653e6629d888973a478ba856099083.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/a_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/b_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/bootstrap.min.self-075878ec6a19d24f3b46052eb9e0e5bb5c2a098ac50d05d8e3a21309d129273a.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/c_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/spanish_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started GET "/assets/application.self-7e0339a5d0f7fe1d2ad7452cb924235cd3fb860666cf3881132946c74a5acf7c.js?body=1" for ::1 at 2016-06-13 09:24:39 -0500
+
+
+Started POST "/users" for ::1 at 2016-06-13 09:24:51 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5u/sQDAUdFFSVcyph9ItLsH9v8GWXmCnMDJf8utwy6He/ZgybID+fIXdtis8ch2DK+dW3aGMLOYoJzTwNGT4Dw==", "user"=>{"phone"=>"2345678901", "active"=>"1", "language"=>"English", "score"=>"1", "next_message"=>"1"}, "commit"=>"Create User"}
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("phone", "active", "language", "next_message", "score", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["phone", "+12345678901"], ["active", "t"], ["language", "English"], ["next_message", 1], ["score", 1], ["created_at", "2016-06-13 14:24:51.566688"], ["updated_at", "2016-06-13 14:24:51.566688"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3001/users/1
+Completed 302 Found in 11ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1" for ::1 at 2016-06-13 09:24:51 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mHistory Load (0.3ms)[0m  [1mSELECT "histories".* FROM "histories" WHERE "histories"."user_id" = $1  ORDER BY "histories"."created_at" DESC[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 180ms (Views: 162.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users" for ::1 at 2016-06-13 09:24:53 -0500
+Processing by UsersController#index as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."id" ASC[0m
+  Rendered users/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 185ms (Views: 182.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for ::1 at 2016-06-13 09:24:55 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mHistory Load (0.2ms)[0m  SELECT "histories".* FROM "histories" WHERE "histories"."user_id" = $1  ORDER BY "histories"."created_at" DESC  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 164ms (Views: 160.3ms | ActiveRecord: 0.6ms)
