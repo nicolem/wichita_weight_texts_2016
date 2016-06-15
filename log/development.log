@@ -4788,3 +4788,257 @@ inside reply function
   [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."phone" IS NULL LIMIT 1
   Rendered text template (0.0ms)
 Completed 200 OK in 15ms (Views: 3.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-06-15 16:54:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (18.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mAdmin Load (7.4ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (6.6ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."id" ASC[0m
+  Rendered users/index.html.erb within layouts/application (39.6ms)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 18.7ms)
+
+ActionView::Template::Error (can not load translations from /Users/nicolemaneth/Documents/wichita_weight_texts_2016/config/locales/devise_invitable.en.yml: #<Psych::SyntaxError: (/Users/nicolemaneth/Documents/wichita_weight_texts_2016/config/locales/devise_invitable.en.yml): did not find expected key while parsing a block mapping at line 17 column 9>):
+    18:         <td><h4><%= user.id %>.&emsp;</h4> </td>
+    19:         <td><h4><%= link_to user.phone, user, {:class => "info"} %></h4></td>
+    20:         <td><h5><%= user.active? ? "True" : "False" %></h5></td>
+    21:         <td><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow= <%=(user.next_message - 1) / 0.3 %>  aria-valuemin="0" aria-valuemax="30" style="width:<%= number_to_percentage((user.next_message - 1) / 0.3, precision: 0) %>"><%= number_to_percentage((user.next_message - 1) / 0.3, precision: 0) %> </div></div></td>
+    22:         <td>&emsp;<%= link_to t('.edit', :default => t("helpers.links.edit")),
+    23:               edit_user_path(user), :class => 'btn btn-default btn-xs' %>&emsp; </td>
+    24:         <td><%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+  app/views/users/index.html.erb:21:in `block in _app_views_users_index_html_erb___2138540763502223362_70316046850280'
+  app/views/users/index.html.erb:16:in `_app_views_users_index_html_erb___2138540763502223362_70316046850280'
+
+
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.5ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (132.7ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (83.8ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nicolemaneth/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (189.8ms)
+
+
+Started GET "/" for ::1 at 2016-06-15 16:56:31 -0500
+Processing by UsersController#index as HTML
+  [1m[35mAdmin Load (0.5ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."id" ASC[0m
+  Rendered users/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 664ms (Views: 642.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/b_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/a_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/c_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/bootstrap.min.self-6655d1384d1509415d234003e6f81cf5de3d688790aaadc1091aa5bb5795b1f1.css?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/scaffolds.self-bbb03550e137652162e4b1ba85488bae211ecd98f67a7fb7716ebbfeab384579.css?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/spanish_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/dataTables/bootstrap/3/jquery.dataTables.bootstrap.self-3093d2d4e5e31a3d86b31f78c596a71f2007ec59e45324ef0e9f5888dd1c1529.css?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/application.self-9e36f0c00e4fb9eba7ae948c5a7f18a353cbce444484365b17da8a1e04e2c304.css?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/dataTables/jquery.dataTables.self-770bf6f5f52c93784a25c3c866719f24d091a3f864c36850a7d338b58bbed52c.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/dataTables/bootstrap/3/jquery.dataTables.bootstrap.self-447fa22a7aa12f01eaf2d37b45bd9b5321653e6629d888973a478ba856099083.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/a_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/b_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/bootstrap.min.self-075878ec6a19d24f3b46052eb9e0e5bb5c2a098ac50d05d8e3a21309d129273a.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/c_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/spanish_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/assets/application.self-7e0339a5d0f7fe1d2ad7452cb924235cd3fb860666cf3881132946c74a5acf7c.js?body=1" for ::1 at 2016-06-15 16:56:32 -0500
+
+
+Started GET "/" for ::1 at 2016-06-15 16:57:04 -0500
+Processing by UsersController#index as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."id" ASC[0m
+  Rendered users/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 224ms (Views: 206.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/b_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/a_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/bootstrap.min.self-6655d1384d1509415d234003e6f81cf5de3d688790aaadc1091aa5bb5795b1f1.css?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/scaffolds.self-bbb03550e137652162e4b1ba85488bae211ecd98f67a7fb7716ebbfeab384579.css?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/spanish_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/c_messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/dataTables/bootstrap/3/jquery.dataTables.bootstrap.self-3093d2d4e5e31a3d86b31f78c596a71f2007ec59e45324ef0e9f5888dd1c1529.css?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/application.self-9e36f0c00e4fb9eba7ae948c5a7f18a353cbce444484365b17da8a1e04e2c304.css?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/dataTables/jquery.dataTables.self-770bf6f5f52c93784a25c3c866719f24d091a3f864c36850a7d338b58bbed52c.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/dataTables/bootstrap/3/jquery.dataTables.bootstrap.self-447fa22a7aa12f01eaf2d37b45bd9b5321653e6629d888973a478ba856099083.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/a_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/b_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/bootstrap.min.self-075878ec6a19d24f3b46052eb9e0e5bb5c2a098ac50d05d8e3a21309d129273a.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/c_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/spanish_messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
+
+
+Started GET "/assets/application.self-7e0339a5d0f7fe1d2ad7452cb924235cd3fb860666cf3881132946c74a5acf7c.js?body=1" for ::1 at 2016-06-15 16:57:05 -0500
