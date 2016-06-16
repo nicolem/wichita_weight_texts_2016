@@ -38,7 +38,7 @@ class User < ActiveRecord::Base
     puts message.to
 
     #add reminder sent time to history
-    note = History.new(:user_id => self.id, :message => "Message ##{self.next_message} sent")
+    note = History.new(:user_id => self.id, :message => "PACE Message ##{self.next_message} sent")
     note.save
 
   end
@@ -55,7 +55,7 @@ class User < ActiveRecord::Base
     puts message.to
 
     #add reminder sent time to history
-    note = History.new(:user_id => self.id, :message => "Message ##{self.next_message} sent")
+    note = History.new(:user_id => self.id, :message => "Food Message ##{self.next_message} sent")
     note.save
 
   end
