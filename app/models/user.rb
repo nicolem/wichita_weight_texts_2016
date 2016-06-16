@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
         :spaces => ''
     ).gsub(/\s+/, "") # Phony won't remove all spaces
   end
-  
+
   def get_group
     if self.score == 1
       return "A"
@@ -18,8 +18,8 @@ class User < ActiveRecord::Base
       return "C"
     end
   end
-  
-  def sendmessage
+
+  def sendpacemessage
     @twilio_number = ENV['TWILIO_NUMBER']
     @client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']
     group = self.get_group
@@ -36,13 +36,30 @@ class User < ActiveRecord::Base
       :body => text_str,
     )
     puts message.to
-    
+
     #add reminder sent time to history
     note = History.new(:user_id => self.id, :message => "Message ##{self.next_message} sent")
     note.save
-    
+
   end
-  
+
+  def sendfoodmessage
+    @twilio_number = ENV['TWILIO_NUMBER']
+    @client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']
+    text_str = Message.find(self.next_message).text
+    message = @client.account.messages.create(
+      :from => @twilio_number,
+      :to => self.phone,
+      :body => text_str,
+    )
+    puts message.to
+
+    #add reminder sent time to history
+    note = History.new(:user_id => self.id, :message => "Message ##{self.next_message} sent")
+    note.save
+
+  end
+
   def sendmiddlemessage
     @twilio_number = ENV['TWILIO_NUMBER']
     @client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']
@@ -53,7 +70,7 @@ class User < ActiveRecord::Base
       :body => "Research subject ##{self.id} has finished the first two weeks of the study; bring them in for asssessment for another PACE score.",
     )
   end
-  
+
   def sendlastmessage
     @twilio_number = ENV['TWILIO_NUMBER']
     @client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']
@@ -64,11 +81,11 @@ class User < ActiveRecord::Base
       :body => text_str,
     )
     puts message.to
-    
+
     #add reminder sent time to history
     note = History.new(:user_id => self.id, :message => "Study completed ")
     note.save
-    
+
     message = @client.account.messages.create(
       :from => @twilio_number,
       :to => ENV['RESEARCHER_PHONE'],

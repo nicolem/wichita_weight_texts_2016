@@ -1,6 +1,6 @@
 namespace :push_messages do
   desc "move to next message"
-  task :pm => :environment do
+  task :pacem => :environment do
     t = Time.now
     if !t.saturday? && !t.sunday?
     # grab all users
@@ -9,7 +9,7 @@ namespace :push_messages do
       users.each do |u|
         if u.active?
           # reschedule reminders
-          u.sendmessage
+          u.sendpacemessage
           u.next_message = u.next_message + 1
           u.save!
           if(u.next_message==11)
@@ -20,6 +20,21 @@ namespace :push_messages do
             u.save!
             u.sendlastmessage
           end
+        end
+      end
+    end
+  end
+
+  task :foodm => :environment do
+    t = Time.now
+    if !t.saturday? && !t.sunday?
+    # grab all users
+      users = User.all
+      # send messages to users
+      users.each do |u|
+        if u.active?
+          # reschedule reminders
+          u.sendfoodmessage
         end
       end
     end
